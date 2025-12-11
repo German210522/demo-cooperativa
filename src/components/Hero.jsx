@@ -40,12 +40,20 @@ export default function Hero() {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-            <button className="bg-gradient-to-r from-coop-primary to-teal-600 hover:from-teal-600 hover:to-teal-800 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg hover:shadow-teal-500/30 transition transform hover:-translate-y-1">
-              Hazte Socio Hoy
-            </button>
-            <button className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold transition">
-              Conocer Servicios
-            </button>
+           <div className="flex flex-col sm:flex-row gap-4">
+        <a 
+            href="#contacto" 
+            className="bg-gradient-to-r from-coop-primary to-teal-600 hover:from-teal-600 hover:to-teal-800 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg text-center hover:shadow-teal-500/30 transition transform hover:-translate-y-1"
+        >
+            Hazte Socio Hoy
+        </a>
+        <a 
+            href="#servicios" 
+            className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold text-center transition"
+        >
+            Conocer Servicios
+                </a>
+            </div>
           </motion.div>
         </div>
       </div>

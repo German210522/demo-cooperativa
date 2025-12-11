@@ -2,5 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-html { scroll-behavior: smooth; }
-body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem; /* <--- ESTO ARREGLA QUE EL MENÚ NO TAPE EL TÍTULO */
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #F8FAFC;
+}
