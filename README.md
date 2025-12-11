@@ -1,16 +1,36 @@
-# React + Vite
+# 🏦 Cooperativa Demo - Landing Page Moderna
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> **Demo Técnico:** Propuesta de diseño y desarrollo web para instituciones financieras y cooperativas.
 
-Currently, two official plugins are available:
+![Estado del Proyecto](https://img.shields.io/badge/Estado-Terminado-success)
+![Tecnología](https://img.shields.io/badge/Stack-React_Vite_Tailwind-blue)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Objetivo del Proyecto
 
-## React Compiler
+Este proyecto es un **MVP (Producto Mínimo Viable)** diseñado para demostrar cómo una cooperativa puede modernizar su presencia digital. El objetivo es ofrecer una interfaz:
+1.  **Confiable:** Uso de colores y tipografías que transmiten seguridad.
+2.  **Rápida:** Optimizada para cargar instantáneamente.
+3.  **Responsive:** Adaptable 100% a dispositivos móviles y tablets.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🔗 **[VER DEMO EN VIVO AQUÍ](https://tu-usuario.github.io/nombre-de-tu-repo/)**
+*(Reemplaza el link de arriba cuando ya tengas el deploy)*
 
-## Expanding the ESLint configuration
+## 🛠️ Tecnologías Utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Este no es un sitio web estático tradicional. Está construido con arquitectura de software moderna para garantizar escalabilidad:
+
+* **React (Vite):** Para una renderización ultra rápida y estructura modular de componentes.
+* **Tailwind CSS:** Para un diseño limpio, moderno y adaptable sin cargar hojas de estilo pesadas.
+* **Framer Motion:** Para micro-interacciones y animaciones suaves que elevan la experiencia de usuario (UX).
+* **Lucide React:** Iconografía moderna y ligera.
+
+## 📂 Estructura del Proyecto
+
+El código está organizado bajo principios de **Clean Code** y **Separación de Intereses**:
+
+```text
+src/
+├── components/   # Bloques reutilizables (Navbar, Hero, Services, Contact)
+├── data/         # Simulación de CMS (textos y datos separados de la lógica)
+├── App.jsx       # Componente raíz
+└── main.jsx      # Punto de entrada

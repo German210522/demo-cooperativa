@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 export default function Services() {
   return (
-    <section id="servicios" className="py-24 bg-gray-50 relative">
+    <section id="servicios" className="py-24 bg-gray-50 relative overflow-hidden">
       {/* Adorno de fondo */}
       <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 bg-teal-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
       

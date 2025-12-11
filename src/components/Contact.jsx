@@ -21,11 +21,11 @@ export default function Contact() {
             <div className="space-y-6">
               <div className="flex items-start space-x-4">
                 <MapPin className="mt-1 text-coop-accent" />
-                <span>Av. Reforma 12-34, Zona 9<br/>Ciudad de Guatemala</span>
+                <span>Av. Reforma 12-34, Zona 0<br/>Ciudad de Guatemala</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Phone className="text-coop-accent" />
-                <span>(502) 2222-0000</span>
+                <span>(502) 2000-0000</span>
               </div>
               <div className="flex items-center space-x-4">
                 <Mail className="text-coop-accent" />

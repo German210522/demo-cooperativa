@@ -1,21 +1,27 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// Función auxiliar para scroll simple dentro del mismo componente
+const scrollToSection = (e, id) => {
+  e.preventDefault();
+  const element = document.getElementById(id);
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth' });
+  }
+};
+
 export default function Hero() {
   return (
     <section id="inicio" className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-      {/* 1. Imagen de fondo con filtro profesional */}
       <div className="absolute inset-0 z-0">
         <img 
           src="https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80" 
           alt="Reunión Cooperativa" 
           className="w-full h-full object-cover"
         />
-        {/* Degradado oscuro para que el texto se lea perfecto */}
         <div className="absolute inset-0 bg-gradient-to-r from-coop-secondary/95 via-coop-secondary/80 to-coop-secondary/40"></div>
       </div>
 
-      {/* 2. Contenido Heroico */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left w-full">
         <div className="md:w-2/3">
           <motion.div
@@ -40,20 +46,21 @@ export default function Hero() {
             transition={{ delay: 0.5 }}
             className="flex flex-col sm:flex-row gap-4"
           >
-           <div className="flex flex-col sm:flex-row gap-4">
-        <a 
-            href="#contacto" 
-            className="bg-gradient-to-r from-coop-primary to-teal-600 hover:from-teal-600 hover:to-teal-800 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg text-center hover:shadow-teal-500/30 transition transform hover:-translate-y-1"
-        >
-            Hazte Socio Hoy
-        </a>
-        <a 
-            href="#servicios" 
-            className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold text-center transition"
-        >
-            Conocer Servicios
-                </a>
-            </div>
+            {/* Botones actualizados con onClick */}
+            <a 
+              href="#contacto" 
+              onClick={(e) => scrollToSection(e, 'contacto')}
+              className="bg-gradient-to-r from-coop-primary to-teal-600 hover:from-teal-600 hover:to-teal-800 text-white px-8 py-4 rounded-xl text-lg font-bold shadow-lg text-center hover:shadow-teal-500/30 transition transform hover:-translate-y-1 cursor-pointer"
+            >
+              Hazte Socio Hoy
+            </a>
+            <a 
+              href="#servicios" 
+              onClick={(e) => scrollToSection(e, 'servicios')}
+              className="bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/30 text-white px-8 py-4 rounded-xl text-lg font-semibold text-center transition cursor-pointer"
+            >
+              Conocer Servicios
+            </a>
           </motion.div>
         </div>
       </div>

@@ -4,10 +4,17 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 5rem; /* <--- ESTO ARREGLA QUE EL MENÚ NO TAPE EL TÍTULO */
+  scroll-padding-top: 5rem;
 }
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
   background-color: #F8FAFC;
+  overflow-x: hidden; /* <--- ESTA ES LA LÍNEA MÁGICA */
+  width: 100%;
+}
+
+#root {
+  overflow-x: hidden; /* <--- DOBLE SEGURIDAD */
+  width: 100%;
 }
